@@ -1,13 +1,56 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <!-- <my-element></my-element>
+
+    <my-template-element></my-template-element>
+
+    <my-shadow-element></my-shadow-element>
+
+    <my-slot-element>
+      <span slot="header">Wevolution</span>
+    </my-slot-element>
+
+    <my-attribute-element
+      title="Capipop"
+      paragraph="Frontend Developer"
+      imgsrc="https://i.pinimg.com/564x/b5/31/6d/b5316defdf3f59ead47630d5f13e79f3.jpg"
+    ></my-attribute-element> -->
+
+    <section class="edit-card">
+      <my-attribute-changed-element
+        title="Caperactus"
+        paragraph="Web Frontend Developer"
+        imgsrc="https://i.pinimg.com/564x/1f/a9/de/1fa9de800d1c06fbf0411bc9846df1b2.jpg"
+        class="profile-card"
+      ></my-attribute-changed-element>
+      <form class="edit-form">
+        <label for="imgSrc" class="edit-label">
+          Image Link
+          <input type="text" name="imgSrc" id="imgSrc" class="edit-input" />
+          <button type="button" class="edit-button change-img">
+            Change Image
+          </button>
+        </label>
+        <div class="edit-buttons">
+          <button class="edit-button change-name">Change name</button>
+          <button class="edit-button change-job">Change profession</button>
+        </div>
+      </form>
+    </section>
+    <main class="anime-cards">
+      <my-anime-card anime-title="konosuba"></my-anime-card>
+      <my-anime-card anime-title="saiki"></my-anime-card>
+      <my-anime-card anime-title="overlord"></my-anime-card>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
