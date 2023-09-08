@@ -1,6 +1,7 @@
 # [📦 Web Components](https://developer.mozilla.org/en-US/docs/Web/API/Web_components)
 
 As always, please check the documentation linked to the titles to see more information and examples.
+[Github Web Components MDN](https://github.com/mdn/web-components-examples/tree/main)
 
 ## 🥸 What are we using to build a component?
 
@@ -106,7 +107,7 @@ I Organized my files in steps, from the simplest component to the most complex:
     - Then just end the component as in the other examples with your styles and structures.
 
 ## Styles
-### :host
+### [:host](https://developer.mozilla.org/en-US/docs/Web/CSS/:host)
 
 - :host is a pseudo-class used to define the styles of your component itself, not the inside elements but the case of your component. It's like the root styles, there you will define the custom properties that will let your component user to stilize and customize your component.
 - :host-context(fatherElement) is a way to give styles to your component according to the father element. In the next example we are styling the component that is inside a Section element with the class "card". It may be useful in certain situations but is good to know that we have this option.
